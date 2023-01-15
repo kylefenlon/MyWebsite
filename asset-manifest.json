@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.94331ac2.css",
-    "main.js": "/static/js/main.db5bfda0.js",
-    "static/js/787.749b4a44.chunk.js": "/static/js/787.749b4a44.chunk.js",
-    "static/media/PythonProject.png": "/static/media/PythonProject.cfae8ffd889ad3a131e4.png",
-    "static/media/software-photo.jpeg": "/static/media/software-photo.da40ef57fc16d03640c0.jpeg",
-    "index.html": "/index.html",
-    "main.94331ac2.css.map": "/static/css/main.94331ac2.css.map",
-    "main.db5bfda0.js.map": "/static/js/main.db5bfda0.js.map",
-    "787.749b4a44.chunk.js.map": "/static/js/787.749b4a44.chunk.js.map"
+    "main.css": "/MyWebsite/static/css/main.94331ac2.css",
+    "main.js": "/MyWebsite/static/js/main.cb3fb350.js",
+    "static/js/787.749b4a44.chunk.js": "/MyWebsite/static/js/787.749b4a44.chunk.js",
+    "static/media/PythonProject.png": "/MyWebsite/static/media/PythonProject.cfae8ffd889ad3a131e4.png",
+    "static/media/software-photo.jpeg": "/MyWebsite/static/media/software-photo.da40ef57fc16d03640c0.jpeg",
+    "index.html": "/MyWebsite/index.html",
+    "main.94331ac2.css.map": "/MyWebsite/static/css/main.94331ac2.css.map",
+    "main.cb3fb350.js.map": "/MyWebsite/static/js/main.cb3fb350.js.map",
+    "787.749b4a44.chunk.js.map": "/MyWebsite/static/js/787.749b4a44.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.94331ac2.css",
-    "static/js/main.db5bfda0.js"
+    "static/js/main.cb3fb350.js"
   ]
 }
