@@ -21,18 +21,18 @@ const NavBar = () => {
 
     return (
         <div class={colour ? "header header-bg" : "header"}>
-            <Link to="/">
+            <Link to="/MyWebsite">
                 <div class="main-title">KFenlon.com</div>
             </Link>
             <ul class="nav-items">
                 <li>
-                    <Link to="/MyWebsite">Home</Link>
+                    <Link to="/MyWebsite/">Home</Link>
                 </li>
                 <li>
-                    <Link to="/projects">Projects</Link>
+                    <Link to="/MyWebsite/projects">Projects</Link>
                 </li>
                 <li>
-                    <Link to="/blog">Blog</Link>
+                    <Link to="/MyWebsite/blog">Blog</Link>
                 </li>
                 {/* <li>
                     <Link to="/contact">Contact</Link>
