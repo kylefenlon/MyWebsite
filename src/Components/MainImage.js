@@ -1,5 +1,5 @@
 import "./MainImage.css";
-import IntroImg from "../images/software-photo.jpg"
+import IntroImg from "../images/software-photo.jpeg"
 import { Link } from "react-router-dom";
 
 import React from 'react'
