@@ -16,7 +16,7 @@ const Footer = () => {
                             Glasgow, Scotland
                         </h4>
                     </div>
-                    <div class="phone">
+                    {/* <div class="phone">
                         <h4>
                             <FaPhone size={20} style={{ color: '#fff', marginRight: '2rem' }} />
                             07495-586565
@@ -27,7 +27,7 @@ const Footer = () => {
                             <FaMailBulk size={20} style={{ color: '#fff', marginRight: '2rem' }} />
                             kyle@kfenlon.com
                         </h4>
-                    </div>
+                    </div> */}
                 </div>
                 <div class="right">
                     <h4>About me</h4>
@@ -39,9 +39,9 @@ const Footer = () => {
                         At the moment the languages I currently know are Python with Flask and JS with React, with an understanding of SQL as well. I am just about to learn
                         Java in the near future. I am currenlty learning these from Codelcan.
                     </p>
-                    <p>
+                    {/* <p>
                         If you wish to contact me you can find my contact details to the left and below.
-                    </p>
+                    </p> */}
                     <div class="social">
                         <a href="https://www.instagram.com/kyle_fenlon/?hl=en"><FaInstagram size={30} style={{ color: '#fff', marginRight: '1rem' }} /> </a>
                         <a href="https://www.linkedin.com/in/kyle-fenlon-98b424262/"><FaLinkedin size={30} style={{ color: '#fff', marginRight: '1rem' }} /> </a>
