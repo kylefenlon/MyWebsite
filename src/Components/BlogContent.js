@@ -64,6 +64,20 @@ const AboutContent = () => {
                     </div>
                 </div>
             </div>
+            <div class="single-blog-container">
+                <div class="blog-card">
+                    <h2 class="blog-title">JPEG image does not load through AWS Amplify but loads locally  - 16th Januaury 2023</h2>
+                    <div class="line">
+                        <hr></hr>
+                    </div>
+                    <div class="blog-details">
+                        <p>Tried to load a "jpeg" file onto my website using AWS Amplify, however the image would not load once the website was deployed, but still showed
+                            up locally. Changing the photo file to end in "jpg" solved the issue, but to solve it without changing from "jpeg" to "jpg" you need to change
+                            the default configuration on AWS Amplify to include "jpeg" otherwise it will just render the index page.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }
