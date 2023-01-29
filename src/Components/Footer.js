@@ -36,8 +36,8 @@ const Footer = () => {
                         my software career.
                     </p>
                     <p>
-                        At the moment the languages I currently know are Python with Flask and JS with React, with an understanding of SQL as well. I am just about to learn
-                        Java in the near future. I am currenlty learning these from Codelcan.
+                        At the moment the languages I currently know are Python with Flask and JS with React, with an understanding of SQL and MongoDB as well.
+                        Also I am learning Java with Express at the moment. I am currently learning these from Codelcan.
                     </p>
                     {/* <p>
                         If you wish to contact me you can find my contact details to the left and below.

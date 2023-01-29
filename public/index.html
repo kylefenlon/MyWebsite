@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#000000" />
   <meta name="description" content="Web site created using create-react-app" />
-  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon.ico" />
   <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -38,6 +38,47 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+  <script>
+    const buffer = 100;
+    const maxEffectPx = 200;
+    const nav = document.getElementsByClassName('header')[0];
+    const performanceWaitMs = 10;
+    // End of change variables
+
+    let lastScrollTime = new Date().getTime();
+    const frostedGlassHandleScroll = () => {
+      // Get scroll from top
+      const scrollFromTop = window.pageYOffset;
+
+      // Performance - check if last scroll time is greater than performanceWaitMs ago
+      if (new Date().getTime() - lastScrollTime < performanceWaitMs && scrollFromTop > 0) return;
+
+      const filterLimits = {
+        blur: 10,
+        saturate: 160,
+        contrast: 45,
+        brightness: 100,
+        opacity: 100
+      };
+
+      let currentFilter = {};
+
+      // Base the current filter on pixels from top up to maximum of maxEffectPx.
+      let baseFilter = ((scrollFromTop - buffer) / maxEffectPx) * 100;
+
+      // If base filter is greater than 100, set to 100
+      baseFilter = baseFilter > 100 ? 100 : baseFilter;
+      baseFilter = baseFilter < 0 ? 0 : baseFilter; currentFilter = {
+        blur: 10, saturate: 160, contrast: 45, brightness:
+          100, opacity: Math.round((baseFilter / 100) * filterLimits.opacity * 10) / 10
+      }; // Set filter const
+      filter = `blur(${currentFilter.blur}px) saturate(${currentFilter.saturate}%) contrast(${currentFilter.contrast}%)
+        brightness(${currentFilter.brightness}%) opacity(${currentFilter.opacity}%)`co nav.style.backdropFilter = filter;
+      lastScrollTime = new Date().getTime();
+    }; // Add scroll event listener window.addEventListener('scroll',
+    frostedGlassHandleScroll();
+
+  </script>
 </body>
 
 </html>

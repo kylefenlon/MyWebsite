@@ -3,11 +3,20 @@
     padding: 4rem 0 2rem 0;
 }
 
+/* .work-container {
+    max-width: 1140px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    padding-bottom: 5rem;
+} */
+
 .project-container {
     max-width: 1140px;
     margin: auto;
-    /* display: grid; */
-    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr); */
     grid-gap: 40px;
     padding-bottom: 5rem;
 }
@@ -24,11 +33,12 @@
 .project-title {
     color: white;
     padding: 1rem 0;
+    font-size: 30px;
 }
 
 .project-details p {
     padding-bottom: 1rem;
-    font-size: 1.1rem;
+    font-size: 20px;
     text-align: justify;
 }
 
