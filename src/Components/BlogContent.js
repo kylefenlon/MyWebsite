@@ -51,21 +51,6 @@ const AboutContent = () => {
             </div>
             <div class="single-blog-container">
                 <div class="blog-card">
-                    <h2 class="blog-title">Created a Basic E-commerce site with React - 10th Januaury 2023</h2>
-                    <div class="line">
-                        <hr></hr>
-                    </div>
-                    <div class="blog-details">
-                        <p>Created a basic E-commerce site that sold shoes using React. Was interesting to learn how to use useStates and useEffects in the most
-                            reasonable and efective way and how sometimes you do not need to use them. Continuing to use React and learning the power of it has been
-                            really fun and I enjoy it. Making the back-end work is always a great feeling, as I had to use my newly devloped software
-                            problem-solving skills to make certain things work.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="single-blog-container">
-                <div class="blog-card">
                     <h2 class="blog-title">JPEG image does not load through AWS Amplify but loads locally  - 16th Januaury 2023</h2>
                     <div class="line">
                         <hr></hr>
