@@ -15,7 +15,7 @@ const AboutContent = () => {
                     <div class="blog-details">
                         <p>Started code clan today, learned about the best ways to work in the software industry.
                             Learned more in depth how to use the terminal and its commands and how to navigate it and then also how to use git,
-                            the website and using it in the terminal. Learned how to create a respiratory in git and how to push a file into this from the terminal.
+                            the website and using it in the terminal. Learned how to create a repository in git and how to push a file into this from the terminal.
                         </p>
                     </div>
                 </div>
@@ -43,7 +43,7 @@ const AboutContent = () => {
                     <div class="blog-details">
                         <p>Created a basic E-commerce site that sold shoes using React. Was interesting to learn how to use useStates and useEffects in the most
                             reasonable and efective way and how sometimes you do not need to use them. Continuing to use React and learning the power of it has been
-                            really fun and I enjoy it. Making the back-end work is always a great feeling, as I had to use my newly devloped software
+                            really fun and I enjoy it. Making the back-end work is always a great feeling, as I had to use my newly developed software
                             problem-solving skills to make certain things work.
                         </p>
                     </div>
