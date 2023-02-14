@@ -55,6 +55,10 @@
     margin: 1rem 0.2rem;
 }
 
+p {
+    font-family: 'Yanone Kaffeesatz' sans-serif;
+}
+
 @media screen and (max-width:640px) {
     .hero .content h1 {
         font-size: 3rem;
