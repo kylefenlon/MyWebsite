@@ -8,7 +8,8 @@ const AboutContent = () => {
         <div class="blog-container">
             <div class="single-blog-container">
                 <div class="blog-card">
-                    <h2 class="blog-title">JPEG image does not load through AWS Amplify but loads locally  - 16th Januaury 2023</h2>
+                    <h2 class="blog-title">JPEG image does not load through AWS Amplify but loads locally</h2>
+                    <h3 class="blog-date">16th January 2023</h3>
                     <div class="line">
                         <hr></hr>
                     </div>
@@ -22,7 +23,8 @@ const AboutContent = () => {
             </div>
             <div class="single-blog-container">
                 <div class="blog-card">
-                    <h2 class="blog-title">Created a Basic E-commerce site with React - 10th January 2023</h2>
+                    <h2 class="blog-title">Created a Basic E-commerce site with React</h2>
+                    <h3 class="blog-date">10th January 2023</h3>
                     <div class="line">
                         <hr></hr>
                     </div>
@@ -37,7 +39,8 @@ const AboutContent = () => {
             </div>
             <div class="single-blog-container">
                 <div class="blog-card">
-                    <h2 class="blog-title">Finished 1st Full Stack App - 7th December 2022</h2>
+                    <h2 class="blog-title">Finished 1st Full Stack App</h2>
+                    <h3 class="blog-date">7th December 2022</h3>
                     <div class="line">
                         <hr></hr>
                     </div>
@@ -51,7 +54,8 @@ const AboutContent = () => {
             </div>
             <div class="single-blog-container">
                 <div class="blog-card">
-                    <h2 class="blog-title">Starting Codelcan - 7th November 2022</h2>
+                    <h2 class="blog-title">Starting Codelcan</h2>
+                    <h3 class="blog-date">7th November 2022</h3>
                     <div class="line">
                         <hr></hr>
                     </div>

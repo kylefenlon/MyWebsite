@@ -23,6 +23,7 @@
 .blog-title {
     color: rgb(15, 14, 14);
     padding: 1rem 0;
+    font-size: 33px;
 }
 
 .blog-details p {
@@ -38,6 +39,11 @@
 .line {
     margin-top: 5px;
     margin-bottom: 30px;
+}
+
+.blog-date {
+    color: gray;
+    font-size: 22px;
 }
 
 
