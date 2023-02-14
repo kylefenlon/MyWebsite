@@ -58,13 +58,14 @@
     font-weight: 600;
     cursor: pointer;
     border-radius: 10px;
+    transition: 0.3s
 }
 
 .pro-btn:hover {
 
     background: rgb(22, 201, 246);
     color: #fff;
-    transition: 0.3s
+
 }
 
 

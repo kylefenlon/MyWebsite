@@ -15,6 +15,19 @@ body {
   background: #062c43;
 }
 
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 8px 0;
+}
+
+p {
+  font-family: 'Rubik', sans-serif;
+}
+
 h1,
 h4,
 p,
@@ -37,6 +50,8 @@ ul {
   font-weight: 600;
   cursor: pointer;
   border-radius: 2px;
+  transition: 0.3s;
+  text-decoration: none;
 }
 
 .btn-light {
@@ -49,16 +64,18 @@ ul {
   font-weight: 600;
   cursor: pointer;
   border-radius: 2px;
+  transition: 0.3s;
+  text-decoration: none;
 }
 
 .btn:hover {
   background: rgba(255, 255, 255, 0.2);
   color: #fff;
-  transition: 0.3s
+
 }
 
 .btn-light:hover {
   background: rgba(255, 255, 255, 0.2);
   color: #fff;
-  transition: 0.3s
+
 }

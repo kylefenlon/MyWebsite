@@ -43,9 +43,9 @@ const Footer = () => {
                         If you wish to contact me you can find my contact details to the left and below.
                     </p> */}
                     <div class="social">
-                        <a href="https://www.instagram.com/kyle_fenlon/?hl=en"><FaInstagram size={30} style={{ color: '#fff', marginRight: '1rem' }} /> </a>
-                        <a href="https://www.linkedin.com/in/kyle-fenlon-98b424262/"><FaLinkedin size={30} style={{ color: '#fff', marginRight: '1rem' }} /> </a>
-                        <a href="https://github.com/kylefenlon"><FaGithub size={30} style={{ color: '#fff', marginRight: '1rem' }} /> </a>
+                        <a href="https://www.instagram.com/kyle_fenlon/?hl=en"><FaInstagram size={30} style={{ color: '#fff', marginRight: '1rem' }} /></a>
+                        <a href="https://www.linkedin.com/in/kyle-fenlon-98b424262/"><FaLinkedin size={30} style={{ color: '#fff', marginRight: '1rem' }} /></a>
+                        <a href="https://github.com/kylefenlon"><FaGithub size={30} style={{ color: '#fff', marginRight: '1rem' }} /></a>
                     </div>
                 </div>
             </div>

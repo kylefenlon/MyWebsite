@@ -7,35 +7,40 @@
     max-width: 1140px;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 40px;
     padding-bottom: 5rem;
     margin-top: 50px;
 }
 
 .blog-card {
-    background: #1a1919;
+    background: whitesmoke;
     padding: 1.2rem 1rem;
     border-radius: 5px;
     min-height: 100%;
 }
 
 .blog-title {
-    color: white;
+    color: rgb(15, 14, 14);
     padding: 1rem 0;
 }
 
 .blog-details p {
     padding-bottom: 1rem;
-    font-size: 20px;
+    font-size: 18px;
     text-align: justify;
     max-width: 500px;
+    font-family: 'Rubik', sans-serif;
+    color: black;
+
 }
 
 .line {
     margin-top: 5px;
     margin-bottom: 30px;
 }
+
+
 
 @media screen and (max-width: 740px) {
     .project-container {
