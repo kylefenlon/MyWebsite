@@ -56,6 +56,10 @@
 }
 
 p {
+    font-family: 'Nunito', sans-serif;
+}
+
+.my-name {
     font-family: 'Yanone Kaffeesatz' sans-serif;
 }
 
