@@ -12,7 +12,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.4) inset;
+
 }
+
+
 
 .main-image::before {
     content: "";

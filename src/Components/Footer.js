@@ -31,7 +31,7 @@ const Footer = () => {
                 </div>
                 <div class="right">
                     <h4>About me</h4>
-                    <p>My name is Kyle Fenlon, I'm 22 years old and I am from Scotland.
+                    <p>My name is Kyle Fenlon and I am from Scotland.
                         I am a junior software developer looking to learn and build
                         my software career.
                     </p>
