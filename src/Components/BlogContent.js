@@ -8,6 +8,24 @@ const AboutContent = () => {
         <div class="blog-container">
             <div class="single-blog-container">
                 <div class="blog-card">
+                    <h2 class="blog-title">Could not scrape website because of CloudFlare security</h2>
+                    <h3 class="blog-date">19th February 2023</h3>
+                    <div class="line">
+                        <hr></hr>
+                    </div>
+                    <div class="blog-details">
+                        <p>I got given a task to build a webscraper for each of the two websites I was asked to extract certain details from.
+                            The first webscraper worked fine as the first website did not have any security to get around. However when trying to
+                            scrape the second website I encountered a 403 error. The website is behind CloudeFlare security so I decided to copy the
+                            fetch request from the network tab in Chrome so that the headers are also included to try and get around CloudeFlare's
+                            security but it still didn't work. I was still getting the 403 error so I decided to copy the HTML page source code into a
+                            file and then used the scraper on that file and managed to get the details asked for by the task.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="single-blog-container">
+                <div class="blog-card">
                     <h2 class="blog-title">JPEG image does not load through AWS Amplify but loads locally</h2>
                     <h3 class="blog-date">16th January 2023</h3>
                     <div class="line">
