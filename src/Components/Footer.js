@@ -32,16 +32,16 @@ const Footer = () => {
                 <div class="right">
                     <h4>About me</h4>
                     <p>My name is Kyle Fenlon and I am from Scotland.
-                        I am a junior software developer looking to learn and build
+                        I am a junior software developer looking to build and develop
                         my software career.
                     </p>
                     <p>
-                        At the moment the languages I currently know are Python with Flask and JS with React, with an understanding of SQL and MongoDB as well.
-                        Also I am learning Java with Spring at the moment. I am currently learning these from Codelcan.
+                        I have just finished the Professional Software Development course ran by CodeClan in Glasgow Scotland. Throughout this course I further developed my skills in
+                        Python, JavaScript and Java along with React, Spring, MySQL and MongoDB.
                     </p>
-                    {/* <p>
-                        If you wish to contact me you can find my contact details to the left and below.
-                    </p> */}
+                    <p>
+                        If you wish to contact me you can find my socials below.
+                    </p>
                     <div class="social">
                         <a href="https://www.instagram.com/kyle_fenlon/?hl=en"><FaInstagram size={30} style={{ color: '#fff', marginRight: '1rem' }} /></a>
                         <a href="https://www.linkedin.com/in/kyle-fenlon-98b424262/"><FaLinkedin size={30} style={{ color: '#fff', marginRight: '1rem' }} /></a>

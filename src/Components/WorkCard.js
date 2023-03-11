@@ -4,6 +4,14 @@ import SelfLanding from '../images/self-landing.png'
 import SelfViewEntries from '../images/self-view-entries.png'
 import SelfDailyStats from '../images/self-daily-stats.png'
 import SelfWeeklyStats from '../images/self-weekly-stats.png'
+import PickupLanding from '../images/Pickup-landing.png'
+import PickupLanding2 from '../images/Pickup-landing-2.png'
+import PickupLanding3 from '../images/pickup-landing-3.png'
+import PickupAuth0 from '../images/pickup-auth0.png'
+import JoinCommunity from '../images/join-community.png'
+import PickupAdmin from '../images/community-admin.png'
+import Community1 from '../images/community-1.png'
+import Community2 from '../images/community-2.png'
 import React from 'react'
 
 const WorkCard = () => {
@@ -48,6 +56,37 @@ const WorkCard = () => {
 
                         <div class="pro-btns">
                             <a href="https://github.com/MackieJG/codeclanJournalApp" class="btn">Github Repo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-container">
+                <div class="project-card">
+                    <h2 class="project-title">Pickup - Clean up your community</h2>
+                    <img src={PickupLanding} alt="img" />
+                    <img src={PickupLanding2} alt="img" />
+                    <img src={PickupLanding3} alt="img" />
+                    <img src={PickupAuth0} alt="img" />
+                    <img src={JoinCommunity} alt="img" />
+                    <img src={PickupAdmin} alt="img" />
+                    <img src={Community1} alt="img" />
+                    <img src={Community2} alt="img" />
+                    <div class="project-details">
+                        <p>Pickup is a web application built with React and Java (Spring) for the capstone project of the CodeClan software professional development 16 week course.
+                            It allows communities to organise litter picking events and allows the users to track the litter collected in a leaderboard format.
+                            It was created in February/March 2023 by Kelsie Murphy, Kyle Fenlon and Josh Montgomery.</p>
+                        <p> This app was built with React, Tailwind-CSS, Java 8.0, Spring and used an Amazon S3 Bucket. </p>
+                        {/* <p>The purpose of this app was to allow CodeClan students to journal how they feel about things relating to them and the course each day and also
+                            fill in a daily questionnaire about things such as the quality of their sleep the night before and how healthy their eating habits have been during that day.
+                            The reason was to then compare how you were feeling along with the habits that you have each day and see the connection between the two.
+                        </p>
+                        <p>Over time this would allow studetns to see how their daily choices/habits regarding their health has an impact on how they feel about different things each day. Thus allowing them
+                            to make better choices to improve how they are feeling and also how they are handling their work/life balance during the course.
+                        </p> */}
+
+                        <div class="pro-btns">
+                            <a href="https://github.com/kelsiesmurphy/pickup" class="btn">Github Repo</a>
+                            <a href="https://www.joinpickup.co" class="btn-light">View</a>
                         </div>
                     </div>
                 </div>
