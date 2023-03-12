@@ -1,46 +1,52 @@
-.project-heading {
+.wellness-project-heading {
     text-align: center;
     padding: 4rem 0 2rem 0;
 }
 
-.work-container {
+/* .work-container {
     max-width: 1500px;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 40px;
     padding-bottom: 5rem;
+} */
+
+.wellness-work-container {
+    display: flex;
+    justify-content: center;
 }
 
-.project-container {
+.wellness-project-container {
     min-height: 100%;
-    max-width: 1140px;
+    max-width: 60%;
     margin: auto;
-    display: grid;
+    /* display: grid; */
     /* grid-template-columns: repeat(3, 1fr); */
     grid-gap: 40px;
     padding-bottom: 5rem;
 }
 
-.project-card {
+.wellness-project-card {
+    margin-top: 100px;
     background: #1a1919;
     padding: 1.2rem 1rem;
     min-height: 550px;
     border-radius: 10px;
-    position: relative;
+    /* position: relative; */
 }
 
-.project-card img {
+.wellness-project-card img {
     width: 100%;
 }
 
-.project-title {
+.wellness-project-title {
     color: white;
     padding: 1rem 0;
     font-size: 30px;
 }
 
-.project-details p {
+.wellness-project-details p {
     padding-bottom: 1rem;
     font-size: 20px;
     text-align: justify;
@@ -76,7 +82,7 @@
 
 
 @media screen and (max-width: 740px) {
-    .project-container {
+    .wellness-project-container {
         max-width: 90%;
         margin: auto;
         grid-template-columns: 1fr;
