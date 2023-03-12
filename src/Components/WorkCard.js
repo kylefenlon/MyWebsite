@@ -22,7 +22,7 @@ const WorkCard = () => {
             <div class="work-container">
                 <div class="project-container">
                     <div class="project-card">
-                        <h2 class="project-title">Python Project - Workout Builder</h2>
+                        <h2 class="project-title">Workout Builder</h2>
                         <img src={PythonProject} alt="image" />
                         <div class="project-details">
                             <p>This was my first ever project that I built by myself from scratch. This is a web app created using Python and Flask which covers all of the CRUD functionality with SQL database integration.
