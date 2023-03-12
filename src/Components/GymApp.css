@@ -1,28 +1,33 @@
-.project-heading {
+.gym-project-heading {
     text-align: center;
     padding: 4rem 0 2rem 0;
 }
 
-.work-container {
+/* .work-container {
     max-width: 1500px;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 40px;
     padding-bottom: 5rem;
+} */
+
+.gym-work-container {
+    display: flex;
+    justify-content: center;
 }
 
-.project-container {
+.gym-project-container {
     min-height: 100%;
-    max-width: 1140px;
+    max-width: 100%;
     margin: auto;
-    display: grid;
+    /* display: grid; */
     /* grid-template-columns: repeat(3, 1fr); */
     grid-gap: 40px;
     padding-bottom: 5rem;
 }
 
-.project-card {
+.gym-project-card {
     background: #1a1919;
     padding: 1.2rem 1rem;
     min-height: 550px;
@@ -30,17 +35,17 @@
     position: relative;
 }
 
-.project-card img {
+.gym-project-card img {
     width: 100%;
 }
 
-.project-title {
+.gym-project-title {
     color: white;
     padding: 1rem 0;
     font-size: 30px;
 }
 
-.project-details p {
+.gym-project-details p {
     padding-bottom: 1rem;
     font-size: 20px;
     text-align: justify;
@@ -76,7 +81,7 @@
 
 
 @media screen and (max-width: 740px) {
-    .project-container {
+    .gym-project-container {
         max-width: 90%;
         margin: auto;
         grid-template-columns: 1fr;
