@@ -15,11 +15,12 @@
 .gym-work-container {
     display: flex;
     justify-content: center;
+
 }
 
 .gym-project-container {
     min-height: 100%;
-    max-width: 100%;
+    max-width: 60%;
     margin: auto;
     /* display: grid; */
     /* grid-template-columns: repeat(3, 1fr); */
