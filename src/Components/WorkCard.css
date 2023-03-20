@@ -27,7 +27,11 @@
     padding: 1.2rem 1rem;
     min-height: 550px;
     border-radius: 10px;
+}
+
+.project-card-2 {
     position: relative;
+    height: 100%;
 }
 
 .project-card img {
