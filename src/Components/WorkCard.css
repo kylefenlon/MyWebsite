@@ -48,14 +48,33 @@
     padding-bottom: 1rem;
     font-size: 20px;
     text-align: justify;
+    position: relative;
 }
 
-.pro-btns {
+/* .pro-btns {
     display: flex;
     justify-content: space-between;
     padding: 0.5rem 0;
     position: absolute;
     bottom: 0;
+} */
+
+.btn-card {
+    display: block;
+    text-align: center;
+    padding: 12px 32px;
+    font-size: 2rem;
+    background: rgb(22, 201, 246);
+    color: #222;
+    border: 1px solid #fff;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: 0.3s;
+    text-decoration: none;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 .pro-btn {
