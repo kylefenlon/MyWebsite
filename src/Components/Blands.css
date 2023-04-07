@@ -1,80 +1,63 @@
-.project-heading {
+.blands-project-heading {
     text-align: center;
     padding: 4rem 0 2rem 0;
 }
 
-.work-container {
+/* .work-container {
     max-width: 1500px;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 40px;
     padding-bottom: 5rem;
+} */
+
+.blands-work-container {
+    display: flex;
+    justify-content: center;
 }
 
-.project-container {
+.blands-project-container {
     min-height: 100%;
-    max-width: 1140px;
+    max-width: 60%;
     margin: auto;
-    display: grid;
+    /* display: grid; */
     /* grid-template-columns: repeat(3, 1fr); */
     grid-gap: 40px;
     padding-bottom: 5rem;
 }
 
-.project-card {
+.blands-project-card {
+    margin-top: 100px;
     background: #1a1919;
     padding: 1.2rem 1rem;
     min-height: 550px;
     border-radius: 10px;
-}
-
-.project-card-2 {
     position: relative;
-    height: 100%;
 }
 
-.project-card img {
+.blands-project-card img {
     width: 100%;
 }
 
-.project-title {
+.blands-project-title {
     color: white;
     padding: 1rem 0;
     font-size: 30px;
 }
 
-.project-details p {
+.blands-project-details p {
     padding-bottom: 1rem;
     font-size: 20px;
     text-align: justify;
-    position: relative;
 }
 
-.workcard-pro-btns {
+.pro-btns {
     display: flex;
     justify-content: space-between;
     padding: 0.5rem 0;
     position: absolute;
     bottom: 0;
-}
-
-.btn-card {
-    display: block;
-    text-align: center;
-    padding: 12px 32px;
-    font-size: 2rem;
-    background: rgb(22, 201, 246);
-    color: #222;
-    border: 1px solid #fff;
-    font-weight: 600;
-    cursor: pointer;
-    border-radius: 2px;
-    transition: 0.3s;
-    text-decoration: none;
-    /* position: absolute;
-    bottom: 0; */
-    width: 100%;
 }
 
 .pro-btn {
@@ -87,40 +70,25 @@
     font-weight: 600;
     cursor: pointer;
     border-radius: 10px;
-    transition: 0.3s;
-    height: 100%
+    transition: 0.3s
 }
 
 .pro-btn:hover {
 
     background: rgb(22, 201, 246);
     color: #fff;
-}
-
-.btn-card-2:hover {
-    background: rgba(255, 255, 255, 0.2);
-    color: #fff;
 
 }
 
-.project-card-3 {
-    position: relative;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.workcard-pro-btns-2 {
+.blands-buttons {
     display: flex;
     justify-content: space-between;
 }
 
-.btn-card-2 {
-    display: block;
-    text-align: center;
+.blands-btn {
     padding: 12px 32px;
     font-size: 2rem;
+    text-transform: uppercase;
     background: rgb(22, 201, 246);
     color: #222;
     border: 1px solid #fff;
@@ -129,36 +97,25 @@
     border-radius: 2px;
     transition: 0.3s;
     text-decoration: none;
-    height: 100%;
 }
 
-.pro-btn-2 {
+.blands-btn-light {
     padding: 12px 32px;
-    font-size: 1rem;
+    font-size: 2rem;
     text-transform: uppercase;
+    background: rgb(225, 227, 244);
     color: #222;
+    border: 1px solid #fff;
     font-weight: 600;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 2px;
     transition: 0.3s;
-    height: 100%;
+    text-decoration: none;
 }
-
-
 
 
 @media screen and (max-width: 740px) {
-
-    .work-container {
-        margin: auto;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 40px;
-        padding-bottom: 5rem;
-        margin-top: 50px;
-    }
-
-    .project-container {
+    .blands-project-container {
         max-width: 90%;
         margin: auto;
         grid-template-columns: 1fr;

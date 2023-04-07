@@ -9,6 +9,7 @@ import NavBar from "./Components/NavBar";
 import GymAppProjectPage from "./Routes/GymAppRoute";
 import WellnessProjectPage from "./Routes/WellnessRoute";
 import PickupPage from "./Routes/PickupRoute";
+import BlandsPage from "./Routes/BlandsRoute";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/gymapp" element={<GymAppProjectPage />} />
         <Route path="/wellness" element={<WellnessProjectPage />} />
         <Route path="/pickup" element={<PickupPage />} />
+        <Route path="/blands" element={<BlandsPage />} />
         {/* <Route path="/contact" element={<Contact />} /> */}
       </Routes>
       {/* // </Router> */}

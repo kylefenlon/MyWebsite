@@ -41,21 +41,7 @@ ul {
   list-style-type: none;
 }
 
-.btn-card {
-  display: block;
-  text-align: center;
-  padding: 12px 32px;
-  font-size: 2rem;
-  background: rgb(22, 201, 246);
-  color: #222;
-  border: 1px solid #fff;
-  font-weight: 600;
-  cursor: pointer;
-  border-radius: 2px;
-  transition: 0.3s;
-  text-decoration: none;
 
-}
 
 .btn {
   padding: 12px 32px;
