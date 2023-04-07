@@ -21,6 +21,7 @@ const BlandApp = () => {
                             <p>I Used Certbot/Let’s Encrypt to install a TLS certificate to secure the website (and display https in the URL).</p>
                             <p> Set up a subdomain and pointed it to the EC2 instance.</p>
                             <p>Created a bash script to deploy your code at the click of a button using Linux commands such as ‘scp’, ‘rsync’ and ‘ssh’.</p>
+                            <p>Set up another sub-domain for the server api.</p>
                             <p>Used Nginx as a reverse proxy for the Express application so that I could set up a TLS certificate anad forward web traffic to the app running on a different port.</p>
                         </p>
                         <div class="blands-buttons">
