@@ -14,7 +14,7 @@ const BlandApp = () => {
                     <img src={BlandsStripe} alt="img" />
                     <div class="blands-project-details">
                         <p>Bland's Sunglasses is an ecommerce store built for selling sunglasses.</p>
-                        <p>It allows users to buy sunglasses by adding them to their cart and then checking out using Stripe.</p>
+                        <p>It allows users to buy sunglasses by adding them to their cart and then check out using Stripe.</p>
                         <p>This app was built using using Bootstrap, JavaScript, React, Express and Stripe.</p>
                         <p>In order to get this project live I created an EC2 instance running Ubuntu & configured it to be publicly accessible.
                             <p>I then installed and configured nginx.</p>
