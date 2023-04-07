@@ -20,7 +20,7 @@ const WorkCard = () => {
                                 <p>Bland's Sunglasses is an ecommerce store built for selling sunglasses using Bootstrap, JS, React, Express, AWS EC2 Ubuntu Instance, Nginx and Stripe.</p>
                                 <div class="workcard-pro-btns-2">
                                     <Link to="/blands" class="btn-card-2">Details</Link>
-                                    <a href="https://shop.kfenlon.com" class="btn-light">Demo</a>
+                                    <a href="https://shop.kfenlon.com" class="btn-light" target="_blank">Demo</a>
                                 </div>
                             </div>
                         </div>
@@ -35,7 +35,7 @@ const WorkCard = () => {
                                 <p>Pickup is a web application built with React and Java (Spring) for the capstone project of the CodeClan software professional development 16 week course.</p>
                                 <div class="workcard-pro-btns-2">
                                     <Link to="/pickup" class="btn-card-2">Details</Link>
-                                    <a href="https://www.joinpickup.co" class="btn-light">Demo</a>
+                                    <a href="https://www.joinpickup.co" class="btn-light" target="_blank">Demo</a>
                                 </div>
                             </div>
                         </div>

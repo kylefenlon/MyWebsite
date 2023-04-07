@@ -2,6 +2,7 @@ import "./Blands.css"
 import BlandsLanding from '../images/BlandsSunglasses.png'
 import BlandsCheckout from '../images/BlandsCheckout.png'
 import BlandsStripe from '../images/BlandsStripe.png'
+import BlandsStripeItems from '../images/StripeItems.png'
 
 const BlandApp = () => {
     return (
@@ -12,6 +13,7 @@ const BlandApp = () => {
                     <img src={BlandsLanding} alt="img" />
                     <img src={BlandsCheckout} alt="img" />
                     <img src={BlandsStripe} alt="img" />
+                    <img src={BlandsStripeItems} alt="img" />
                     <div class="blands-project-details">
                         <p>Bland's Sunglasses is an ecommerce store built for selling sunglasses.</p>
                         <p>It allows users to buy sunglasses by adding them to their cart and then check out using Stripe.</p>
@@ -26,7 +28,7 @@ const BlandApp = () => {
                         </p>
                         <div class="blands-buttons">
                             <a href="https://github.com/kylefenlon/StripeEcommerceStore" class="blands-btn">Github Repo</a>
-                            <a href="https://shop.kfenlon.com" class="blands-btn-light">DEMO</a>
+                            <a href="https://shop.kfenlon.com" class="blands-btn-light" target="_blank">DEMO</a>
                         </div>
                     </div>
                 </div>

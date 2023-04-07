@@ -28,7 +28,7 @@ const PickupApp = () => {
                         <p> This app was built with React, Tailwind-CSS, Java 8.0, Spring and used an Amazon S3 Bucket. </p>
                         <div class="pickup-buttons">
                             <a href="https://github.com/kelsiesmurphy/pickup" class="pickup-btn">Github Repo</a>
-                            <a href="https://www.joinpickup.co" class="pickup-btn-light">DEMO</a>
+                            <a href="https://www.joinpickup.co" class="pickup-btn-light" target="_blank">DEMO</a>
                         </div>
                     </div>
                 </div>
