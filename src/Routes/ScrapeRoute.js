@@ -2,14 +2,14 @@ import React from 'react'
 import NavBar from '../Components/NavBar';
 import Footer from '../Components/Footer';
 import SecondImage from '../Components/SecondImage';
-import BlandApp from '../Components/Blands';
+import ScrapeApp from '../Components/Scrape';
 
 const BlandsPage = () => {
     return (
         <div>
             <NavBar />
-            <SecondImage heading="ECOMMERCE" />
-            <BlandApp />
+            <SecondImage heading="WEB-SCRAPER" />
+            <ScrapeApp />
             <Footer />
         </div>
     )

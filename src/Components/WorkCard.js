@@ -3,6 +3,7 @@ import PythonProject from "../images/PythonProject.png"
 import SelfLanding from '../images/self-landing.png'
 import PickupLanding from '../images/Pickup-landing.png'
 import BlandsLanding from '../images/BlandsSunglasses.png'
+import AdimoScrape from '../images/adimo-scrape.png'
 import React from 'react'
 import { Link } from "react-router-dom"
 
@@ -11,6 +12,18 @@ const WorkCard = () => {
         <>
             <h1 class="project-heading">My most recent projects</h1>
             <div class="work-container">
+                <div class="project-container">
+                    <div class="project-card">
+                        <div class="project-card-3">
+                            <h2 class="project-title">Web Scraping Task</h2>
+                            <img src={AdimoScrape} alt="img" />
+                            <div class="project-details">
+                                <p>This web scraper was built as a take home task for a company during their interviewing process.</p>
+                                <Link to="/scrape" class="btn-card">Details</Link>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="project-container">
                     <div class="project-card">
                         <div class="project-card-3">

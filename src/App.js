@@ -10,6 +10,7 @@ import GymAppProjectPage from "./Routes/GymAppRoute";
 import WellnessProjectPage from "./Routes/WellnessRoute";
 import PickupPage from "./Routes/PickupRoute";
 import BlandsPage from "./Routes/BlandsRoute";
+import ScrapePage from "./Routes/ScrapeRoute";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/wellness" element={<WellnessProjectPage />} />
         <Route path="/pickup" element={<PickupPage />} />
         <Route path="/blands" element={<BlandsPage />} />
+        <Route path="/scrape" element={<ScrapePage />} />
         {/* <Route path="/contact" element={<Contact />} /> */}
       </Routes>
       {/* // </Router> */}
