@@ -11,6 +11,7 @@ import WellnessProjectPage from "./Routes/WellnessRoute";
 import PickupPage from "./Routes/PickupRoute";
 import BlandsPage from "./Routes/BlandsRoute";
 import ScrapePage from "./Routes/ScrapeRoute";
+import CleancoBEPage from "./Routes/CleancoBERoute";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/pickup" element={<PickupPage />} />
         <Route path="/blands" element={<BlandsPage />} />
         <Route path="/scrape" element={<ScrapePage />} />
+        <Route path="/cleancoBE" element={<CleancoBEPage />} />
         {/* <Route path="/contact" element={<Contact />} /> */}
       </Routes>
       {/* // </Router> */}
