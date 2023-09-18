@@ -114,17 +114,9 @@
 }
 
 .cleancoBE-btn-light:hover {
-    padding: 12px 32px;
-    font-size: 2rem;
-    text-transform: uppercase;
-    background: rgb(225, 227, 244);
-    color: #222;
-    border: 1px solid #fff;
-    font-weight: 600;
-    cursor: pointer;
-    border-radius: 2px;
-    transition: 0.3s;
-    text-decoration: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+
 }
 
 
