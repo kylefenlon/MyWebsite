@@ -1,5 +1,3 @@
-import "./SecondImage.css"
-
 import React, { Component } from 'react'
 
 class SecondImage extends Component {

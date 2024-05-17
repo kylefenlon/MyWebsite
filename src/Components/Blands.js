@@ -1,4 +1,3 @@
-import "./Blands.css"
 import BlandsLanding from '../images/BlandsSunglasses.png'
 import BlandsCheckout from '../images/BlandsCheckout.png'
 import BlandsStripe from '../images/BlandsStripe.png'

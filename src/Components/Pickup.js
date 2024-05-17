@@ -1,4 +1,3 @@
-import "./Pickup.css"
 import PickupLanding from '../images/Pickup-landing.png'
 import PickupLanding2 from '../images/Pickup-landing-2.png'
 import PickupLanding3 from '../images/pickup-landing-3.png'

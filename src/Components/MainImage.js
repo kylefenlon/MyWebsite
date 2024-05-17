@@ -1,4 +1,3 @@
-import "./MainImage.css";
 import IntroImg from "../images/software-photo.jpg"
 import { Link } from "react-router-dom";
 

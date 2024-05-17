@@ -1,4 +1,3 @@
-import "./Wellness.css"
 import SelfLanding from '../images/self-landing.png'
 import SelfViewEntries from '../images/self-view-entries.png'
 import SelfDailyStats from '../images/self-daily-stats.png'

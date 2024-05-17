@@ -1,4 +1,3 @@
-import "./GymApp.css"
 import PythonProject from "../images/PythonProject.png"
 
 const GymApp = () => {

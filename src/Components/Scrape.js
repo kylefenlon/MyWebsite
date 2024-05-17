@@ -1,4 +1,3 @@
-import "./Scrape.css"
 import AdimoScrape from '../images/adimo-scrape.png'
 import InitialScrape from '../images/initial-scrape-code.png'
 import WhiskeyScrape from '../images/whiskey-code.png'

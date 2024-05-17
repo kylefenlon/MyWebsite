@@ -1,5 +1,3 @@
-import "./BlogContent.css"
-import "./BlogContent.css"
 import React from 'react'
 
 

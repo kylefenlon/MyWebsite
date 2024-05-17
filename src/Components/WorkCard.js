@@ -1,4 +1,3 @@
-import "./WorkCard.css"
 import PythonProject from "../images/PythonProject.png"
 import SelfLanding from '../images/self-landing.png'
 import PickupLanding from '../images/Pickup-landing.png'
