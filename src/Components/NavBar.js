@@ -1,49 +1,36 @@
-import "./NavBar.css"
-import { useState } from "react"
-import React from 'react'
-import { Link } from "react-router-dom"
+import React from "react";
+import { Link } from "react-router-dom";
+import '../CSS/NavBar.css';
 
 const NavBar = () => {
-
-    const [click, setClick] = useState(false);
-    const handleClick = () => setClick(!click);
-
-    const [colour, setColour] = useState(false);
-    const changeColour = () => {
-        if (window.scrollY >= 100) {
-            setColour(true);
-        } else {
-            setColour(false)
-        }
-    };
-
-    window.addEventListener("scroll", changeColour)
-
     return (
-        <div class={colour ? "header header-bg" : "header"}>
-            <Link to="/">
-                <div class="main-title">KFenlon.com</div>
-            </Link>
-            <ul class="nav-items">
-                <li>
-                    <Link to="/">Home</Link>
-                </li>
-                <li>
-                    <Link to="/projects">Projects</Link>
-                </li>
-                <li>
-                    <Link to="/blog">Blog</Link>
-                </li>
-                {/* <li>
-                    <Link to="/contact">Contact</Link>
-                </li> */}
-            </ul>
+        <div className="container">
+            <div className="left">
+                <Link to="/" className="mainHeading">
+                    KFenlon.com
+                </Link>
+            </div>
+            <div className="right">
+                <ul className="routes">
+                    <li className="routesLink">
+                        <Link to="/" className="link">
+                            Home
+                        </Link>
+                    </li>
+                    <li className="routesLink">
+                        <Link to="/about" className="link">
+                            About
+                        </Link>
+                    </li>
+                    <li className="routesLink">
+                        <Link to="/blog" className="link">
+                            Blog
+                        </Link>
+                    </li>
+                </ul>
+            </div>
         </div>
-    )
-
-}
-
-
-
+    );
+};
 
 export default NavBar;
