@@ -1,7 +1,10 @@
 import React from "react";
+import About from '../Components/About.js'
 
 const HomeContainer = () => {
-    return "Hello World"
+    return (
+        <About />
+    )
 }
 
 export default HomeContainer

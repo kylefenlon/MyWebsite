@@ -11,8 +11,12 @@
 
 .mainHeading {
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #fff;
+}
+
+.mainHeading:hover {
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
 }
 
 .right {
@@ -21,7 +25,7 @@
 }
 
 .left {
-    padding-left: 0.5%;
+    padding-left: 0.1%;
 }
 
 .routes {

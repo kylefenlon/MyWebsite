@@ -18,8 +18,8 @@ const NavBar = () => {
                         </Link>
                     </li>
                     <li className="routesLink">
-                        <Link to="/about" className="link">
-                            About
+                        <Link to="/projects" className="link">
+                            Projects
                         </Link>
                     </li>
                     <li className="routesLink">
