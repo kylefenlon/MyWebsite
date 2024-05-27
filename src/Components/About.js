@@ -1,4 +1,5 @@
 import React from "react";
+import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 import ProfilePhoto from '../images/Profile-photo.png'
 import DadGolf from '../images/Dad-Golf.png'
 import SnowyMunro from '../images/Snowy-Munro.png'
@@ -31,7 +32,7 @@ const About = () => {
                             and travelling.
                         </p>
                     </div>
-                    <div class="social">
+                    <div className="socials">
                         <a href="https://www.instagram.com/kyle_fenlon/?hl=en"><FaInstagram size={30} style={{ color: 'black', marginRight: '1rem' }} /></a>
                         <a href="https://www.linkedin.com/in/kyle-fenlon-98b424262/"><FaLinkedin size={30} style={{ color: 'black', marginRight: '1rem' }} /></a>
                         <a href="https://github.com/kylefenlon"><FaGithub size={30} style={{ color: 'black', marginRight: '1rem' }} /></a>
