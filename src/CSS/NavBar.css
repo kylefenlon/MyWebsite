@@ -7,6 +7,7 @@
     background-color: #333;
     color: #fff;
     box-sizing: border-box;
+    opacity: 95%;
 }
 
 .mainHeading {
@@ -42,7 +43,7 @@
 .link {
     color: #fff;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.2rem;
     position: relative;
     transition: all 0.3s ease;
     padding: 5px 10px;
