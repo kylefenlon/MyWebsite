@@ -31,6 +31,11 @@ const About = () => {
                             and travelling.
                         </p>
                     </div>
+                    <div class="social">
+                        <a href="https://www.instagram.com/kyle_fenlon/?hl=en"><FaInstagram size={30} style={{ color: 'black', marginRight: '1rem' }} /></a>
+                        <a href="https://www.linkedin.com/in/kyle-fenlon-98b424262/"><FaLinkedin size={30} style={{ color: 'black', marginRight: '1rem' }} /></a>
+                        <a href="https://github.com/kylefenlon"><FaGithub size={30} style={{ color: 'black', marginRight: '1rem' }} /></a>
+                    </div>
                 </div>
                 <div className="rightAbout">
                     <img src={ProfilePhoto} alt='Profile' className="profilePhoto" />
