@@ -67,7 +67,7 @@ const Projects = () => {
                         <div className="project">
                             {project.link ? (
                                 <Link to={project.link} target="_blank" rel="noopener noreferrer">
-                                    <h2 className="projectTitle">{project.title}</h2>
+                                    <h2 className="projectTitleLink">{project.title}</h2>
                                 </Link>
                             ) : (
                                 <h2 className="projectTitle">{project.title}</h2>

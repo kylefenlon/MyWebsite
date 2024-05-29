@@ -16,7 +16,6 @@
     align-items: flex-start;
     width: 100%;
     margin-bottom: 2rem;
-
 }
 
 .projectsHeading {
@@ -25,8 +24,6 @@
     font-weight: bold;
     text-align: center;
     margin-bottom: 0;
-
-
 
 }
 
@@ -47,6 +44,21 @@
     font-size: 1.5rem;
     font-weight: bold;
     margin: 0;
+}
+
+.projectTitleLink {
+    color: #007bff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.projectTitleLink:hover {
+    color: #0056b3;
+    transform: translateY(-2px);
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .projectService {
