@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 import '../CSS/NavBar.css';
 
 const NavBar = () => {
@@ -18,15 +19,15 @@ const NavBar = () => {
                         </Link>
                     </li>
                     <li className="routesLink">
-                        <Link to="/projects" className="link">
+                        <ScrollLink to="projects" smooth={true} duration={500} className="link">
                             Projects
-                        </Link>
+                        </ScrollLink>
                     </li>
-                    <li className="routesLink">
+                    {/* <li className="routesLink">
                         <Link to="/blog" className="link">
                             Blog
                         </Link>
-                    </li>
+                    </li> */}
                 </ul>
             </div>
         </div>

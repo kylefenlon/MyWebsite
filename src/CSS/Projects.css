@@ -80,3 +80,11 @@
     color: #000;
     font-family: 'Cutive', serif;
 }
+
+
+@media (max-width: 912px) {
+
+    .projectsContainer {
+        max-width: 95%;
+    }
+}

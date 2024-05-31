@@ -10,7 +10,7 @@ import '../CSS/About.css'
 
 const About = () => {
     return (
-        <div className="topAboutContainer">
+        <div id="about" className="topAboutContainer">
             <div className="mainContainer">
                 <div className="leftAbout">
                     <div className="heading">
