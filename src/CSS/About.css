@@ -2,17 +2,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
 .mainContainer {
-    /* margin-top: 10%; */
     padding: 20px;
     margin: 20px;
     margin-top: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 70%
+    max-width: 70%;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .mainHeadingAbout {
@@ -49,15 +51,11 @@
 .profilePhoto {
     max-width: 100%;
     padding: 0.5rem;
-    /* Ensure the image doesn't overflow */
     height: auto;
-    /* Maintain aspect ratio */
     border-radius: 40%;
     border-top-left-radius: 30%;
-    border-bottom-right-radius: 20%;
     border-bottom-right-radius: 10%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 1.5);
-    /* Optional: add a shadow for better visuals */
 }
 
 .imagesContainer {
@@ -82,4 +80,45 @@
     object-fit: cover;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 912px) {
+
+    .imageList {
+        flex-wrap: wrap;
+    }
+
+    .image {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .mainContainer {
+        flex-direction: column;
+        max-width: 95%;
+    }
+
+    .mainHeadingAbout {
+        font-size: 3rem;
+    }
+
+    .firstPara,
+    .secondPara {
+        font-size: 0.9rem;
+    }
+
+    .smallImage {
+        width: 6rem;
+        height: 4rem;
+    }
+
+    .imagesContainer {
+        max-width: 80%;
+    }
+
+    .imageList {
+        justify-content: space-around;
+    }
 }

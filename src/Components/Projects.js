@@ -3,6 +3,20 @@ import { Link } from "react-router-dom";
 import '../CSS/Projects.css';
 
 const Projects = () => {
+
+    const techStackKeywords = [
+        'JavaScript', 'React', 'Express', 'AWS EC2',
+        'Ubuntu', 'CloudFront', 'S3', 'PHP', 'Bootstrap',
+        'Stripe', 'nginx', 'Certbot', 'Let’s Encrypt', 'rsync',
+        'ssh', 'Spring', 'Tailwind CSS', 'Java 8.0', 'Wordpress',
+        'scp'
+    ];
+
+    const highlightTechStack = (description) => {
+        const regex = new RegExp(`\\b(${techStackKeywords.join('|')})\\b`, 'gi');
+        return description.replace(regex, (match) => `<span class="highlight">${match}</span>`);
+    };
+
     const projects = [
         {
             'title': 'CleanCo Ltd CRM',
@@ -55,6 +69,7 @@ const Projects = () => {
         },
     ]
 
+
     return (
         <div className="projectsContainer">
             <div className="projectsContainerHeading">
@@ -72,8 +87,8 @@ const Projects = () => {
                             ) : (
                                 <h2 className="projectTitle">{project.title}</h2>
                             )}
-                            <p className="projectService">{project.services}</p>
-                            <p className="projectDescription">{project.description}</p>
+                            <p className="projectService"> - {project.services}</p>
+                            <p className="projectDescription" dangerouslySetInnerHTML={{ __html: highlightTechStack(project.description) }}></p>
                         </div>
                     </li>
                 ))}
