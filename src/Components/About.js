@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 import ProfilePhoto from '../images/Profile-photo.png'
 import DadGolf from '../images/Dad-Golf.png'
@@ -9,6 +10,9 @@ import '../CSS/About.css'
 
 
 const About = () => {
+
+
+
     return (
         <div id="about" className="topAboutContainer">
             <div className="mainContainer">
