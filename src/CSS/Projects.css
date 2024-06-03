@@ -47,17 +47,32 @@
     font-family: 'Rubik', sans-serif;
 }
 
+
 .projectServiceLink {
     color: #007bff;
     font-size: 1rem;
     cursor: pointer;
-    margin: 0;
-    /* display: inline-block; */
+    position: relative;
+    display: inline-block;
 }
 
-.projectServiceLink:hover {
-    text-decoration: underline;
+.projectServiceLink::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 0;
+    right: 0;
+    background: #007bff;
+    transition: width 0.3s ease, right 0.3s ease;
 }
+
+.projectServiceLink:hover::after {
+    width: 100%;
+    left: 0;
+}
+
 
 .projectService {
     color: #777;
