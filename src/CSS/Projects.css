@@ -1,0 +1,94 @@
+.projectsContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    flex-direction: column;
+    align-items: center;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1rem;
+}
+
+.projectsContainerHeading {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.projectsHeading {
+    color: #333;
+    font-size: 2.5rem;
+    font-weight: lighter;
+    text-align: center;
+    margin-bottom: 0;
+
+}
+
+.projectsList {
+    list-style-type: none;
+    padding-left: 0;
+    width: 100%;
+}
+
+.projectItem {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-left: 1.5px solid #333;
+}
+
+.projectTitle {
+    color: #333;
+    font-size: 1.4rem;
+    font-weight: lighter;
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+.projectServiceLink {
+    color: #007bff;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 0;
+    /* display: inline-block; */
+}
+
+.projectServiceLink:hover {
+    text-decoration: underline;
+}
+
+.projectService {
+    color: #777;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+.projectDescription {
+    color: #555;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    line-height: 1.5;
+}
+
+.highlight {
+    font-weight: bolder;
+    font-size: 0.9rem;
+    color: #000;
+    font-family: 'Cutive', serif;
+}
+
+.linkServiceContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: -0.45rem;
+}
+
+
+@media (max-width: 912px) {
+
+    .projectsContainer {
+        max-width: 95%;
+    }
+}
