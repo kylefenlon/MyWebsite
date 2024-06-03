@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FaExternalLinkAlt } from "react-icons/fa";
 import '../CSS/Projects.css';
 
 const Projects = () => {
@@ -85,7 +86,7 @@ const Projects = () => {
                                     <h2 className="projectTitle">{project.title}</h2>
                                     <div className="linkServiceContainer">
                                         <Link to={project.link} target="_blank" rel="noopener noreferrer">
-                                            <p className="projectServiceLink">Visit Site</p>
+                                            <p className="projectServiceLink">Visit Site <FaExternalLinkAlt size={15} style={{ color: '#007bff', marginRight: '0.3rem', paddingTop: '0.15rem' }} /></p>
                                         </Link>
                                         <p className="projectService"> - {project.services}</p>
                                     </div>
@@ -101,7 +102,7 @@ const Projects = () => {
                     </li>
                 ))}
             </ul>
-        </div>
+        </div >
     )
 }
 
