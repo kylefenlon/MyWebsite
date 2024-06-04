@@ -29,7 +29,7 @@ const Projects = () => {
                 {projects.map((project, index) => (
                     <li key={index} className="projectItem">
                         <div className="project">
-                            {project.link ? (
+                            {projects.link ? (
                                 <>
                                     <h2 className="projectTitle">{project.title}</h2>
                                     <div className="linkServiceContainer">

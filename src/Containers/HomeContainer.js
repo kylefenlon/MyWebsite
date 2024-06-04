@@ -1,6 +1,7 @@
 import React from "react";
 import About from '../Components/About.js'
 import Projects from '../Components/Projects.js'
+import Blog from '../Components/Blog.js'
 import '../CSS/HomeContainer.css'
 
 const HomeContainer = () => {
@@ -8,6 +9,7 @@ const HomeContainer = () => {
         <>
             <About />
             <Projects />
+            <Blog />
         </>
     )
 }
