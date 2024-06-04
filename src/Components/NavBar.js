@@ -23,11 +23,11 @@ const NavBar = () => {
                             Projects
                         </ScrollLink>
                     </li>
-                    {/* <li className="routesLink">
-                        <Link to="/blog" className="link">
+                    <li className="routesLink">
+                        <ScrollLink to="blog" smooth={true} duration={500} className="link">
                             Blog
-                        </Link>
-                    </li> */}
+                        </ScrollLink>
+                    </li>
                 </ul>
             </div>
         </div>
