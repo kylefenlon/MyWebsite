@@ -105,6 +105,7 @@
 
     .blogImages {
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     .smallBlogImage {
