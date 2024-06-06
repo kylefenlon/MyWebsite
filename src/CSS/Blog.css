@@ -4,11 +4,14 @@
 .slick-prev:before,
 .slick-next:before {
     color: #333;
+    display: flex;
+    align-items: center;
 }
 
 .slick-slide {
     display: flex;
     justify-content: center;
+    padding-left: 1.8rem
 }
 
 .blogContainer {
