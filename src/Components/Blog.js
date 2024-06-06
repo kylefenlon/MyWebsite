@@ -1,9 +1,31 @@
 import { blogs } from "../Data/BlogData";
 import { FaCalendarAlt, FaBookOpen } from "react-icons/fa";
-import '../CSS/Blog.css'
-import { useState } from "react";
+import '../CSS/Blog.css';
+import { useState, useEffect } from "react";
+import Slider from "react-slick";
 
 const Blog = () => {
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 500);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth < 912);
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+    };
 
     return (
         <div id="blog" className="blogContainer">
@@ -25,11 +47,21 @@ const Blog = () => {
                             <h3 className="blogChallengeTitle">Challenges:</h3>
                             <p className="blogChallenges">{blog.challenges}</p>
                             {blog.images && blog.images.length > 0 && (
-                                <div className="blogImages">
-                                    <img src={blog.images[0]} alt='display' className="smallBlogImage" />
-                                    <img src={blog.images[1]} alt='display' className="smallBlogImage" />
-                                    <img src={blog.images[2]} alt='display' className="smallBlogImage" />
-                                </div>
+                                isMobile ? (
+                                    <Slider {...settings} className="blogImages">
+                                        {blog.images.map((image, idx) => (
+                                            <div key={idx}>
+                                                <img src={image} alt={`display ${idx}`} className="smallBlogImage" />
+                                            </div>
+                                        ))}
+                                    </Slider>
+                                ) : (
+                                    <div className="blogImages">
+                                        {blog.images.map((image, idx) => (
+                                            <img key={idx} src={image} alt={`display ${idx}`} className="smallBlogImage" />
+                                        ))}
+                                    </div>
+                                )
                             )}
                         </div>
                     </li>
@@ -37,7 +69,6 @@ const Blog = () => {
             </ul>
         </div>
     )
-
 }
 
 export default Blog;

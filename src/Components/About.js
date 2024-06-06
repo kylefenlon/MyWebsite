@@ -11,8 +11,6 @@ import '../CSS/About.css'
 
 const About = () => {
 
-
-
     return (
         <div id="about" className="topAboutContainer">
             <div className="mainContainer">
