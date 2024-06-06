@@ -1,6 +1,7 @@
 import { blogs } from "../Data/BlogData";
 import { FaCalendarAlt, FaBookOpen } from "react-icons/fa";
 import '../CSS/Blog.css'
+import { useState } from "react";
 
 const Blog = () => {
 

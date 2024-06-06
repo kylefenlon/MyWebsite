@@ -109,10 +109,11 @@
     }
 
     .profilePhoto {
-        height: 12rem;
-        width: 11rem;
+        height: 8rem;
+        width: 7rem;
         padding: 0.2rem;
-        border-radius: 40%;
+        margin-left: 10rem;
+        margin-top: -6rem;
         border-top-left-radius: 30%;
         border-bottom-right-radius: 10%;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 1.5);
