@@ -7,7 +7,7 @@ export const projects = [
                     4–5 hours of manual rota management per week by processing 
                     staff availability, job allocations, and operational constraints.
 
-                    The frontend is developed using Vue 3 and Typescript, delivering a reactive 
+                    The frontend is developed using Vue 3, Typescript and Vuetify, delivering a reactive 
                     and responsive user interface for schedule configuration and staff management.
 
                     The backend is built with Python and FastAPI, exposing a high-performance 
@@ -33,7 +33,7 @@ export const projects = [
                         the submitted work in the database.
                         
                         The application was initially deployed on AWS using EC2 (Ubuntu), 
-                        S3, and CloudFront alongside a JavaScript, React, and Express stack. 
+                        S3, and CloudFront alongside a JavaScript, MUI, React, and Express stack. 
                         To reduce infrastructure overhead and operating costs, the hosting layer was later migrated to Hostens, 
                         while preserving the existing application architecture and deployment workflow.`
     },
