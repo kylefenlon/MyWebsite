@@ -35,7 +35,7 @@ const About = () => {
                         </p>
                     </div>
                     <div className="socials">
-                        <a href="https://www.instagram.com/kyle_fenlon/?hl=en"><FaInstagram size={30} style={{ color: 'black', marginRight: '1rem' }} /></a>
+                        <a href="https://www.instagram.com/kyle_fenlon1406/?hl=en"><FaInstagram size={30} style={{ color: 'black', marginRight: '1rem' }} /></a>
                         <a href="https://www.linkedin.com/in/kyle-fenlon-98b424262/"><FaLinkedin size={30} style={{ color: 'black', marginRight: '1rem' }} /></a>
                         <a href="https://github.com/kylefenlon"><FaGithub size={30} style={{ color: 'black', marginRight: '1rem' }} /></a>
                     </div>
