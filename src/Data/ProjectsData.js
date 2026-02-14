@@ -1,16 +1,41 @@
 export const projects = [
     {
+        'title': 'RotAi – Workforce Scheduling Automation Platform',
+        'services': 'Full Stack Application – Web Design, System Architecture, Hosting, Devops',
+        'status': 'Production deployment across three active business sites commencing Q1 2026',
+        'description': `RotAi is a workforce scheduling automation platform built to eliminate 
+                    4–5 hours of manual rota management per week by processing 
+                    staff availability, job allocations, and operational constraints.
+
+                    The frontend is developed using Vue 3 and Typescript, delivering a reactive 
+                    and responsive user interface for schedule configuration and staff management.
+
+                    The backend is built with Python and FastAPI, exposing a high-performance 
+                    REST API that handles scheduling logic, validation rules, and data processing. 
+                    Persistent data storage is managed using MySQL.
+
+                    The application is deployed using Vercel for frontend hosting and Railway 
+                    for backend infrastructure, supported by a streamlined CI/CD workflow 
+                    to enable continuous deployment and rapid iteration.
+
+                    Initially prototyped with AI-assisted rota generation, the system was 
+                    re-engineered with deterministic backend logic to ensure a reliable
+                    scheduling output.`
+    },
+    {
         'title': 'CleanCo Ltd CRM',
         'services': 'Full Stack Application - Web Design, Hosting, Devops',
+        'status': 'Been in production since 2024, still actively being used to manage work for over 12 staff daily',
         'description': `The Clean-Co Daily Work Tracker is designed to monitor 
                         employees daily work submissions efficiently. Employees 
                         can upload their daily tasks through an easy-to-use form, 
                         while admins have a dedicated section to access and review 
                         the submitted work in the database.
                         
-                        The application is built 
-                        with a robust tech stack, including JavaScript, React, 
-                        Express, an AWS EC2 Ubuntu instance, CloudFront distribution, and an S3 bucket.`
+                        The application was initially deployed on AWS using EC2 (Ubuntu), 
+                        S3, and CloudFront alongside a JavaScript, React, and Express stack. 
+                        To reduce infrastructure overhead and operating costs, the hosting layer was later migrated to Hostens, 
+                        while preserving the existing application architecture and deployment workflow.`
     },
     {
         'title': 'CleanCo Ltd Website',
@@ -37,7 +62,6 @@ export const projects = [
                         script for one-click code deployment using Linux commands like ‘scp’, ‘rsync’, and ‘ssh’. 
                         A separate subdomain was set up for the server API, and nginx was used as a reverse proxy 
                         for the Express application to manage TLS certificates and route traffic appropriately.`,
-        'link': 'https://shop.kfenlon.com/'
     },
     {
         'title': 'Community Litter Pickup Organizer',
