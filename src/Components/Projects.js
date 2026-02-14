@@ -7,12 +7,14 @@ import '../CSS/Projects.css';
 const Projects = () => {
 
     const techStackKeywords = [
-        'JavaScript', 'React', 'Express', 'AWS EC2',
+        'JavaScript', 'Typescript', 'React', 'Express', 'AWS EC2',
         'Ubuntu', 'CloudFront', 'S3', 'PHP', 'Bootstrap',
         'Stripe', 'nginx', 'Certbot', 'Let’s Encrypt', 'rsync',
         'ssh', 'Spring', 'Tailwind CSS', 'Java 8.0', 'Wordpress',
-        'scp'
+        'scp', 'Vue 3', 'Python', 'FastAPI', 'MySQL',
+        'Vercel', 'Railway', 'REST API', 'CI/CD'
     ];
+
 
     const highlightTechStack = (description) => {
         const regex = new RegExp(`\\b(${techStackKeywords.join('|')})\\b`, 'gi');
@@ -43,6 +45,9 @@ const Projects = () => {
                                 <>
                                     <h2 className="projectTitle">{project.title}</h2>
                                     <p className="projectService"> - {project.services}</p>
+                                    {project.status && (
+                                        <span className="projectStatus">{project.status}</span>
+                                    )}
                                 </>
                             )}
                             <p className="projectDescription" dangerouslySetInnerHTML={{ __html: highlightTechStack(project.description) }}></p>
