@@ -47,6 +47,14 @@
     font-family: 'Rubik', sans-serif;
 }
 
+.projectStatus {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #1f7a3f;
+    /* deeper, less neon */
+    margin-top: 0.3rem;
+}
+
 
 .projectServiceLink {
     color: #007bff;
