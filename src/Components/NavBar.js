@@ -13,11 +13,11 @@ const NavBar = () => {
             </div>
             <div className="right">
                 <ul className="routes">
-                    <li className="routesLink">
+                    {/* <li className="routesLink">
                         <Link to="/" className="link">
                             Home
                         </Link>
-                    </li>
+                    </li> */}
                     <li className="routesLink">
                         <ScrollLink to="projects" smooth={true} duration={500} className="link">
                             Projects
