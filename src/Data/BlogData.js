@@ -63,19 +63,19 @@ export const blogs = [
         'readTime': '2mins'
     },
     {
-        'title': 'Personalized Coding Basics Course',
+        'title': 'Personalised Coding Basics Course',
         'date': '14/02/2026',
         'description': `With AI becoming an ever more consistent part of my software engineering career and 
                     phyically typing out the code is happening less and less
                     I decided to create a self-paced coding course that leverages AI to stay ahead and keep my skills sharp. 
-                    Each section is personalized to my learning style and progress. By updating a central 
+                    Each section is personalised to my learning style and progress. By updating a central 
                     README and a Claude.md file, I can ask AI to generate new levels focusing on areas 
                     I struggle with, tailoring each exercise to me. I want to make sure I keep a deep understanding of the fundamentals.
 
                     This approach ensures I maintain an edge in software development,
                     The course covers multiple languages and fundamentals, all running directly 
                     in the browser via folders with a README, index.html, and app.js. Hosting it on a private 
-                    GitHub repo keeps everything organized and secure.`,
+                    GitHub repo keeps everything organised and secure.`,
 
         'challenges': `The real challenge is making AI work for you in a structured, meaningful way. 
                 It’s easy to let AI generate content blindly, but the value comes from reviewing, 
@@ -85,7 +85,7 @@ export const blogs = [
                 that adapt to my strengths and weaknesses, while organizing fundamentals and interview prep 
                 into subcategories that remain accessible in-browser. The goal is to balance breadth and 
                 depth of topics without getting overwhelmed, leveraging AI as a collaborator to stay 
-                competitive, personalized, and continually improving.`,
+                competitive, personalised, and continually improving.`,
 
         'readTime': '3mins',
     }

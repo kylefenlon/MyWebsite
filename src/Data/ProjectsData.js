@@ -40,11 +40,11 @@ export const projects = [
     {
         'title': 'CleanCo Ltd Website',
         'services': 'Web Design and Hosting',
-        'description': `CleanCo Professional Cleaning Services is a website built using a customized WordPress theme tailored for 
+        'description': `CleanCo Professional Cleaning Services is a website built using a customised WordPress theme tailored for 
                         showcasing the company’s offerings. It allows customers to explore various cleaning services and easily book appointments online.
 
-                        Developed and customized with PHP to enhance functionality, the website features detailed service listings, an integrated 
-                        contact system, and client testimonials. Launched in 2023, the site is fully responsive, SEO optimized, 
+                        Developed and customised with PHP to enhance functionality, the website features detailed service listings, an integrated 
+                        contact system, and client testimonials. Launched in 2023, the site is fully responsive, SEO optimised, 
                         and uses an interactive map for locating services.`,
         'link': 'https://www.cleanco-ltd.co.uk/'
     },
