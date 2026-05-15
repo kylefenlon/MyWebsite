@@ -6,59 +6,76 @@ import SunnyMunro from '../images/Sunny-Munro.png'
 import TechTalk from '../images/Tech-Talk.png'
 import '../CSS/About.css'
 
+const galleryImages = [
+    { src: DadGolf, alt: 'Kyle golfing with his dad' },
+    { src: SnowyMunro, alt: 'Hiking a snowy Scottish munro' },
+    { src: SunnyMunro, alt: 'Standing on a munro summit on a clear day' },
+    { src: TechTalk, alt: 'Kyle delivering a tech talk' },
+];
 
 const About = () => {
-
     return (
-        <div id="about" className="topAboutContainer">
+        <section id="about" className="topAboutContainer">
             <div className="mainContainer">
+                <div className="rightAbout">
+                    <img
+                        src={ProfilePhoto}
+                        alt="Portrait of Kyle Fenlon"
+                        className="profilePhoto"
+                    />
+                </div>
                 <div className="leftAbout">
                     <div className="heading">
-                        <h1 className="mainHeadingAbout">
-                            about.
-                        </h1>
+                        <h1 className="mainHeadingAbout">about.</h1>
                     </div>
-                    <div className="intro">
-                        <p className="firstPara">
-                            I'm a Software Developer from<br></br>
-                            Glasgow, Scotland.
-                        </p>
-                    </div>
-                    <div className="descriptionAbout">
-                        <p className="secondPara">
-                            Banging my head against the wall trying to
-                            solve a coding issue is my idea of fun. However I guess for 'fun',
-                            you will also find me golfing, working out, seeing friends/family
-                            and travelling.
-                        </p>
-                    </div>
+                    <p className="firstPara">
+                        I'm a Software Developer from<br />
+                        Glasgow, Scotland.
+                    </p>
+                    <p className="secondPara">
+                        Banging my head against the wall trying to solve a coding issue
+                        is my idea of fun. However I guess for 'fun', you will also find
+                        me golfing, working out, seeing friends/family and travelling.
+                    </p>
                     <div className="socials">
-                        <a href="https://www.instagram.com/kyle_fenlon1406/?hl=en"><FaInstagram size={30} style={{ color: 'black', marginRight: '1rem' }} /></a>
-                        <a href="https://www.linkedin.com/in/kyle-fenlon-98b424262/"><FaLinkedin size={30} style={{ color: 'black', marginRight: '1rem' }} /></a>
-                        <a href="https://github.com/kylefenlon"><FaGithub size={30} style={{ color: 'black', marginRight: '1rem' }} /></a>
+                        <a
+                            href="https://www.instagram.com/kyle_fenlon1406/?hl=en"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Instagram profile"
+                            className="socialLink"
+                        >
+                            <FaInstagram className="socialIcon" aria-hidden="true" />
+                        </a>
+                        <a
+                            href="https://www.linkedin.com/in/kyle-fenlon-98b424262/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="LinkedIn profile"
+                            className="socialLink"
+                        >
+                            <FaLinkedin className="socialIcon" aria-hidden="true" />
+                        </a>
+                        <a
+                            href="https://github.com/kylefenlon"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="GitHub profile"
+                            className="socialLink"
+                        >
+                            <FaGithub className="socialIcon" aria-hidden="true" />
+                        </a>
                     </div>
                 </div>
-                <div className="rightAbout">
-                    <img src={ProfilePhoto} alt='Profile' className="profilePhoto" />
-                </div>
             </div>
-            <div className="imagesContainer">
-                <ul className="imageList">
-                    <li className="image">
-                        <img src={DadGolf} alt='display' className="smallImage" />
+            <ul className="imageList" aria-label="Photos">
+                {galleryImages.map((img, i) => (
+                    <li key={i} className="image">
+                        <img src={img.src} alt={img.alt} className="smallImage" />
                     </li>
-                    <li className="image">
-                        <img src={SnowyMunro} alt='display' className="smallImage" />
-                    </li>
-                    <li className="image">
-                        <img src={SunnyMunro} alt='display' className="smallImage" />
-                    </li>
-                    <li className="image">
-                        <img src={TechTalk} alt='display' className="smallImage" />
-                    </li>
-                </ul>
-            </div>
-        </div>
+                ))}
+            </ul>
+        </section>
     )
 }
 

@@ -12,10 +12,19 @@
 
 .projectsContainerHeading {
     display: flex;
+    align-items: center;
     justify-content: center;
-    align-items: flex-start;
+    gap: 1rem;
     width: 100%;
     margin-bottom: 2rem;
+}
+
+.projectsContainerHeading::before,
+.projectsContainerHeading::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #ccc;
 }
 
 .projectsHeading {

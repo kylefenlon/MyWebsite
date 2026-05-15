@@ -2,43 +2,34 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .mainContainer {
     padding: 20px;
-    margin: 20px;
-    margin-top: 1.5rem;
+    margin: 1.5rem auto 20px;
     display: flex;
+    flex-direction: row-reverse;
     align-items: center;
     justify-content: center;
     max-width: 70%;
-    margin-right: auto;
-    margin-left: auto;
 }
 
 .mainHeadingAbout {
     font-size: 6rem;
-    color: black;
+    color: #111;
 }
 
 .firstPara {
-    color: gray;
+    color: #777;
     font-size: 1.2rem;
-    opacity: 70%;
     margin-top: 1.3rem;
     line-height: 1.5;
 }
 
-.descriptionAbout {
-    width: auto;
-    margin-top: 2rem;
-}
-
 .secondPara {
-    color: gray;
-    opacity: 90%;
+    color: #666;
     line-height: 1.7;
+    margin-top: 2rem;
 }
 
 .leftAbout {
@@ -53,23 +44,47 @@
     border-radius: 40%;
     border-top-left-radius: 30%;
     border-bottom-right-radius: 10%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 1.5);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-.imagesContainer {
-    width: 100%;
+.socials {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
 
+.socialLink {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #111;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.socialLink:hover {
+    color: #007bff;
+    transform: translateY(-2px);
+}
+
+.socialIcon {
+    width: 1.75rem;
+    height: 1.75rem;
 }
 
 .imageList {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    flex-direction: row;
+    gap: 1rem;
+    padding: 0;
+    margin: 1rem 0;
+    width: 100%;
+    max-width: 70%;
 }
 
 .image {
-    margin: 0 10px
+    margin: 0;
 }
 
 .smallImage {
@@ -77,57 +92,57 @@
     height: 7rem;
     object-fit: cover;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
+.smallImage:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.18);
+}
 
 @media (max-width: 912px) {
-
     .imageList {
-        flex-wrap: wrap;
-    }
-
-    .image {
-        margin-top: 10px;
+        max-width: 95%;
     }
 }
 
-
 @media (max-width: 500px) {
-
     .mainContainer {
-        flex-direction: column;
+        display: block;
         max-width: 95%;
         margin: auto;
         padding: 15px;
     }
 
+    .leftAbout {
+        margin: 0;
+        padding: 0;
+    }
+
+    .rightAbout {
+        float: right;
+        width: 45%;
+        margin: 0.5rem 0 0.5rem 1rem;
+        shape-outside: margin-box;
+    }
+
     .mainHeadingAbout {
-        font-size: 5rem;
+        font-size: 4rem;
     }
 
     .profilePhoto {
-        height: 8rem;
-        width: 7rem;
+        width: 100%;
+        height: auto;
         padding: 0.2rem;
-        margin-left: 10rem;
-        margin-top: -5rem;
-        border-top-left-radius: 30%;
-        border-bottom-right-radius: 10%;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 1.5);
     }
 
     .firstPara,
     .secondPara {
-        font-size: 0.9rem;
+        font-size: 0.95rem;
     }
 
-    .smallImage {
-        width: 8rem;
-        height: 4.5rem;
-    }
-
-    .descriptionAbout {
+    .secondPara {
         margin-top: 1rem;
     }
 
@@ -135,11 +150,23 @@
         margin-top: 1rem;
     }
 
-    .imagesContainer {
-        max-width: 80%;
+    .socials {
+        clear: both;
+        padding-top: 1rem;
+    }
+
+    .socialIcon {
+        width: 1.5rem;
+        height: 1.5rem;
     }
 
     .imageList {
-        justify-content: space-around;
+        clear: both;
+        gap: 0.75rem;
+    }
+
+    .smallImage {
+        width: 8rem;
+        height: 4.5rem;
     }
 }

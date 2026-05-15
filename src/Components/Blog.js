@@ -1,25 +1,10 @@
 import { blogs } from "../Data/BlogData";
 import { FaCalendarAlt, FaBookOpen } from "react-icons/fa";
 import '../CSS/Blog.css';
-import { useState, useEffect } from "react";
 import Slider from "react-slick";
 
 const Blog = () => {
-    const [isMobile, setIsMobile] = useState(window.innerWidth < 500);
-
-    useEffect(() => {
-        const handleResize = () => {
-            setIsMobile(window.innerWidth < 912);
-        };
-
-        window.addEventListener('resize', handleResize);
-
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-    }, []);
-
-    const settings = {
+    const sliderSettings = {
         dots: true,
         infinite: true,
         speed: 500,
@@ -28,46 +13,59 @@ const Blog = () => {
     };
 
     return (
-        <div id="blog" className="blogContainer">
+        <section id="blog" className="blogContainer">
             <div className="blogContainerHeading">
-                <hr></hr>
                 <h1 className="blogHeading">Blog</h1>
             </div>
             <ul className="blogList">
                 {blogs.map((blog, index) => (
                     <li key={index} className="blogItem">
-                        <div className="blog">
+                        <article className="blog">
                             <h2 className="blogTitle">{blog.title}</h2>
                             <div className="blogTimeContainer">
-                                <p className="blogTime"> <FaCalendarAlt size={17} style={{ color: '#777', marginRight: '0.3rem', paddingTop: '0.15rem' }} />- {blog.date}</p>
-                                <p className="blogTime"> <FaBookOpen size={17} style={{ color: '#777', marginRight: '0.3rem', paddingTop: '0.15rem' }} />- {blog.readTime}</p>
+                                <p className="blogTime">
+                                    <FaCalendarAlt className="metaIcon" aria-hidden="true" /> {blog.date}
+                                </p>
+                                <p className="blogTime">
+                                    <FaBookOpen className="metaIcon" aria-hidden="true" /> {blog.readTime}
+                                </p>
                             </div>
                             <p className="blogDescription">{blog.description}</p>
-                            <hr></hr>
-                            <h3 className="blogChallengeTitle">Challenges:</h3>
+                            <hr className="blogDivider" />
+                            <h3 className="blogChallengeTitle">Challenges</h3>
                             <p className="blogChallenges">{blog.challenges}</p>
                             {blog.images && blog.images.length > 0 && (
-                                isMobile ? (
-                                    <Slider {...settings} className="blogImages">
+                                <>
+                                    <div className="blogImages blogImagesDesktop">
                                         {blog.images.map((image, idx) => (
-                                            <div key={idx}>
-                                                <img src={image} alt={`display ${idx}`} className="smallBlogImage" />
-                                            </div>
-                                        ))}
-                                    </Slider>
-                                ) : (
-                                    <div className="blogImages">
-                                        {blog.images.map((image, idx) => (
-                                            <img key={idx} src={image} alt={`display ${idx}`} className="smallBlogImage" />
+                                            <img
+                                                key={idx}
+                                                src={image}
+                                                alt={blog.imageAlts?.[idx] ?? `${blog.title} – figure ${idx + 1}`}
+                                                className="smallBlogImage"
+                                            />
                                         ))}
                                     </div>
-                                )
+                                    <div className="blogImagesMobile">
+                                        <Slider {...sliderSettings}>
+                                            {blog.images.map((image, idx) => (
+                                                <div key={idx}>
+                                                    <img
+                                                        src={image}
+                                                        alt={blog.imageAlts?.[idx] ?? `${blog.title} – figure ${idx + 1}`}
+                                                        className="smallBlogImage"
+                                                    />
+                                                </div>
+                                            ))}
+                                        </Slider>
+                                    </div>
+                                </>
                             )}
-                        </div>
+                        </article>
                     </li>
                 ))}
             </ul>
-        </div>
+        </section>
     )
 }
 

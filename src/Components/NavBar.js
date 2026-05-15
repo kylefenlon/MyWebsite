@@ -5,32 +5,25 @@ import '../CSS/NavBar.css';
 
 const NavBar = () => {
     return (
-        <div className="container">
-            <div className="left">
-                <Link to="/" className="mainHeading">
+        <nav className="navBar" aria-label="Primary">
+            <div className="navBarLeft">
+                <Link to="/" className="navBrand">
                     KFenlon.com
                 </Link>
             </div>
-            <div className="right">
-                <ul className="routes">
-                    {/* <li className="routesLink">
-                        <Link to="/" className="link">
-                            Home
-                        </Link>
-                    </li> */}
-                    <li className="routesLink">
-                        <ScrollLink to="projects" smooth={true} duration={500} className="link">
-                            Projects
-                        </ScrollLink>
-                    </li>
-                    <li className="routesLink">
-                        <ScrollLink to="blog" smooth={true} duration={500} className="link">
-                            Blog
-                        </ScrollLink>
-                    </li>
-                </ul>
-            </div>
-        </div>
+            <ul className="navRoutes">
+                <li className="navRouteItem">
+                    <ScrollLink to="projects" smooth={true} duration={500} className="navLink">
+                        Projects
+                    </ScrollLink>
+                </li>
+                <li className="navRouteItem">
+                    <ScrollLink to="blog" smooth={true} duration={500} className="navLink">
+                        Blog
+                    </ScrollLink>
+                </li>
+            </ul>
+        </nav>
     );
 };
 

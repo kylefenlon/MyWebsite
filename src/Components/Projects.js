@@ -24,8 +24,7 @@ const Projects = () => {
     return (
         <div id="projects" className="projectsContainer">
             <div className="projectsContainerHeading">
-                <hr></hr>
-                <h1 className="projectsHeading">Projects</h1>
+                <h1 className="projectsHeading">Recent Work</h1>
             </div>
             <ul className="projectsList">
                 {projects.map((project, index) => (

@@ -2,7 +2,7 @@ export const projects = [
     {
         'title': 'RotAi – Workforce Scheduling Automation Platform',
         'services': 'Full Stack Application – Web Design, System Architecture, Hosting, Devops',
-        'status': 'Production deployment across three active business sites commencing Q1 2026',
+        'status': 'Production deployment across three active business sites since Q1 2026',
         'description': `RotAi is a workforce scheduling automation platform built to eliminate 
                     4–5 hours of manual rota management per week by processing 
                     staff availability, job allocations, and operational constraints.
@@ -34,7 +34,7 @@ export const projects = [
                         
                         The application was initially deployed on AWS using EC2 (Ubuntu), 
                         S3, and CloudFront alongside a JavaScript, MUI, React, and Express stack. 
-                        To reduce infrastructure overhead and operating costs, the hosting layer was later migrated to Hostens, 
+                        To reduce infrastructure overhead and operating costs, the hosting layer was later migrated to Railway, 
                         while preserving the existing application architecture and deployment workflow.`
     },
     {
