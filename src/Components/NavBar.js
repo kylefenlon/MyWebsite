@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
+import ThemeToggle from "./ThemeToggle";
 import '../CSS/NavBar.css';
 
 const NavBar = () => {
@@ -21,6 +22,9 @@ const NavBar = () => {
                     <ScrollLink to="blog" smooth={true} duration={500} className="navLink">
                         Blog
                     </ScrollLink>
+                </li>
+                <li className="navRouteItem">
+                    <ThemeToggle />
                 </li>
             </ul>
         </nav>

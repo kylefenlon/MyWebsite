@@ -24,11 +24,11 @@
     content: "";
     flex: 1;
     height: 1px;
-    background: #ccc;
+    background: var(--border);
 }
 
 .projectsHeading {
-    color: #333;
+    color: var(--text-primary);
     font-size: 2.5rem;
     font-weight: lighter;
     text-align: center;
@@ -45,11 +45,11 @@
 .projectItem {
     margin-bottom: 2rem;
     padding: 1rem;
-    border-left: 1.5px solid #333;
+    border-left: 1.5px solid var(--text-primary);
 }
 
 .projectTitle {
-    color: #333;
+    color: var(--text-primary);
     font-size: 1.4rem;
     font-weight: lighter;
     margin: 0;
@@ -59,14 +59,14 @@
 .projectStatus {
     font-size: 0.8rem;
     font-weight: 500;
-    color: #1f7a3f;
+    color: var(--status-success);
     /* deeper, less neon */
     margin-top: 0.3rem;
 }
 
 
 .projectServiceLink {
-    color: #007bff;
+    color: var(--accent);
     font-size: 1rem;
     cursor: pointer;
     position: relative;
@@ -81,7 +81,7 @@
     display: block;
     margin-top: 0;
     right: 0;
-    background: #007bff;
+    background: var(--accent);
     transition: width 0.3s ease, right 0.3s ease;
 }
 
@@ -92,13 +92,13 @@
 
 
 .projectService {
-    color: #777;
+    color: var(--text-faint);
     font-size: 1rem;
     margin-top: 0.5rem;
 }
 
 .projectDescription {
-    color: #555;
+    color: var(--text-muted);
     font-size: 0.9rem;
     margin-top: 0.5rem;
     line-height: 1.5;
@@ -107,7 +107,7 @@
 .highlight {
     font-weight: bolder;
     font-size: 0.9rem;
-    color: #000;
+    color: var(--text-strong);
     font-family: 'Cutive', serif;
 }
 

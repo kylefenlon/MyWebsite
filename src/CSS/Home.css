@@ -1,7 +1,8 @@
 .pageContent {
-    background-color: whitesmoke;
+    background-color: var(--bg);
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    transition: background-color 0.25s ease;
 }

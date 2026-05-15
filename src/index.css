@@ -1,5 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Cutive&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap');
 
+:root {
+  --bg: whitesmoke;
+  --bg-elevated: #ffffff;
+  --bg-navbar: rgba(245, 245, 245, 0.95);
+  --text-primary: #333;
+  --text-heading: #111;
+  --text-muted: #555;
+  --text-subtle: #666;
+  --text-faint: #777;
+  --text-strong: #000;
+  --accent: #007bff;
+  --accent-soft: rgba(0, 123, 255, 0.08);
+  --border: #ccc;
+  --border-soft: #ddd;
+  --border-faint: #eee;
+  --status-success: #1f7a3f;
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 8px 20px rgba(0, 0, 0, 0.12);
+  --shadow-image: 0 4px 8px rgba(0, 0, 0, 0.2);
+  --shadow-image-hover: 0 8px 16px rgba(0, 0, 0, 0.18);
+  --shadow-profile: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+[data-theme="dark"] {
+  --bg: #0f1115;
+  --bg-elevated: #1a1d23;
+  --bg-navbar: rgba(15, 17, 21, 0.85);
+  --text-primary: #e3e6eb;
+  --text-heading: #f5f7fa;
+  --text-muted: #b3b8c1;
+  --text-subtle: #a0a5ad;
+  --text-faint: #8a8f99;
+  --text-strong: #ffffff;
+  --accent: #4d9eff;
+  --accent-soft: rgba(77, 158, 255, 0.12);
+  --border: #2a2f38;
+  --border-soft: #2a2f38;
+  --border-faint: #20242b;
+  --status-success: #4cb380;
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 8px 20px rgba(0, 0, 0, 0.5);
+  --shadow-image: 0 4px 8px rgba(0, 0, 0, 0.5);
+  --shadow-image-hover: 0 8px 16px rgba(0, 0, 0, 0.5);
+  --shadow-profile: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,11 +55,12 @@
 }
 
 body {
-  background: whitesmoke;
-  color: #333;
+  background-color: var(--bg);
+  color: var(--text-primary);
   font-family: 'Yanone Kaffeesatz', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.25s ease, color 0.25s ease;
 }
 
 h1, h2, h3, h4, p {
@@ -27,7 +76,7 @@ ul {
 }
 
 :focus-visible {
-  outline: 2px solid #007bff;
+  outline: 2px solid var(--accent);
   outline-offset: 3px;
   border-radius: 3px;
 }

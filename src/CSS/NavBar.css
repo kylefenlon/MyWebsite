@@ -7,11 +7,12 @@
     align-items: center;
     width: 100%;
     padding: 0.75rem 1.25rem;
-    background-color: rgba(245, 245, 245, 0.95);
+    background-color: var(--bg-navbar);
     backdrop-filter: saturate(180%) blur(8px);
     -webkit-backdrop-filter: saturate(180%) blur(8px);
     box-sizing: border-box;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    box-shadow: var(--shadow-sm);
+    transition: background-color 0.25s ease, box-shadow 0.25s ease;
 }
 
 .navBarLeft {
@@ -22,12 +23,12 @@
 .navBrand {
     text-decoration: none;
     font-size: 1.5rem;
-    color: #111;
+    color: var(--text-heading);
     transition: color 0.2s ease;
 }
 
 .navBrand:hover {
-    color: #007bff;
+    color: var(--accent);
 }
 
 .navRoutes {
@@ -43,7 +44,7 @@
 }
 
 .navLink {
-    color: #333;
+    color: var(--text-primary);
     text-decoration: none;
     font-size: 1.1rem;
     position: relative;
@@ -54,8 +55,8 @@
 }
 
 .navLink:hover {
-    color: #007bff;
-    background-color: rgba(0, 123, 255, 0.08);
+    color: var(--accent);
+    background-color: var(--accent-soft);
 }
 
 @media (max-width: 500px) {

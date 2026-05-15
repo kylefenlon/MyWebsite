@@ -1,0 +1,51 @@
+.themeToggle {
+    position: relative;
+    width: 2.25rem;
+    height: 2.25rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0.5rem;
+    background: transparent;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: var(--text-primary);
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.themeToggle:hover {
+    background-color: var(--accent-soft);
+    color: var(--accent);
+}
+
+.themeToggleIcon {
+    position: absolute;
+    width: 1.2rem;
+    height: 1.2rem;
+    transition: opacity 0.3s ease, transform 0.4s ease;
+}
+
+.themeToggleIcon.isHidden {
+    opacity: 0;
+    transform: rotate(-90deg) scale(0.6);
+    pointer-events: none;
+}
+
+.themeToggleIcon.isVisible {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+}
+
+@media (max-width: 500px) {
+    .themeToggle {
+        width: 2rem;
+        height: 2rem;
+        margin-left: 0.25rem;
+    }
+
+    .themeToggleIcon {
+        width: 1.05rem;
+        height: 1.05rem;
+    }
+}

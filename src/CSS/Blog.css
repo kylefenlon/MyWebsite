@@ -3,7 +3,7 @@
 
 .slick-prev:before,
 .slick-next:before {
-    color: #333;
+    color: var(--text-primary);
     display: flex;
     align-items: center;
 }
@@ -38,11 +38,11 @@
     content: "";
     flex: 1;
     height: 1px;
-    background: #ccc;
+    background: var(--border);
 }
 
 .blogHeading {
-    color: #333;
+    color: var(--text-primary);
     font-size: 2.5rem;
     font-weight: lighter;
     text-align: center;
@@ -58,20 +58,20 @@
 .blogItem {
     margin-bottom: 2rem;
     padding: 1.5rem;
-    border: 1px solid #ddd;
+    border: 1px solid var(--border-soft);
     border-radius: 10px;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: var(--bg-elevated);
+    box-shadow: var(--shadow-md);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.25s ease, border-color 0.25s ease;
 }
 
 .blogItem:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    box-shadow: var(--shadow-lg);
 }
 
 .blogTitle {
-    color: #333;
+    color: var(--text-primary);
     font-size: 1.6rem;
     font-weight: lighter;
     margin: 0 0 0.5rem;
@@ -79,7 +79,7 @@
 }
 
 .blogTime {
-    color: #777;
+    color: var(--text-faint);
     font-size: 1rem;
     margin: 0;
     display: inline-flex;
@@ -95,26 +95,26 @@
 }
 
 .metaIcon {
-    color: #777;
+    color: var(--text-faint);
     width: 1rem;
     height: 1rem;
 }
 
 .blogDescription,
 .blogChallenges {
-    color: #555;
+    color: var(--text-muted);
     font-size: 1rem;
     line-height: 1.6;
 }
 
 .blogDivider {
     border: 0;
-    border-top: 1px solid #eee;
+    border-top: 1px solid var(--border-faint);
     margin: 1.25rem 0;
 }
 
 .blogChallengeTitle {
-    color: #333;
+    color: var(--text-primary);
     font-size: 1.3rem;
     font-weight: lighter;
     margin: 0 0 0.5rem;
@@ -139,7 +139,7 @@
     height: 7rem;
     object-fit: cover;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: var(--shadow-image);
 }
 
 @media (max-width: 912px) {
