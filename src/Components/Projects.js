@@ -12,7 +12,8 @@ const Projects = () => {
         'Stripe', 'nginx', 'Certbot', 'Let’s Encrypt', 'rsync',
         'ssh', 'Spring', 'Tailwind CSS', 'Java 8.0', 'Wordpress',
         'scp', 'Vue 3', 'Python', 'FastAPI', 'MySQL',
-        'Vercel', 'Railway', 'REST API', 'CI/CD', 'Vuetify', 'MUI', 'Hostens'
+        'Vercel', 'Railway', 'REST API', 'CI/CD', 'Vuetify', 'MUI', 'Hostens',
+        'Drizzle', 'Radix', 'Shadcn'
     ];
 
 
