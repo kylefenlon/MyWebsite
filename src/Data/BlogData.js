@@ -88,7 +88,5 @@ export const blogs = [
                 competitive, personalised, and continually improving.`,
 
         'readTime': '3mins',
-    }
-
-
+    },
 ]
