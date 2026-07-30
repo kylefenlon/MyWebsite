@@ -39,14 +39,37 @@ export const projects = [
     },
     {
         'title': 'CleanCo Ltd Website',
-        'services': 'Web Design and Hosting',
-        'description': `CleanCo Professional Cleaning Services is a website built using a customised WordPress theme tailored for 
-                        showcasing the company’s offerings. It allows customers to explore various cleaning services and easily book appointments online.
-
-                        Developed and customised with PHP to enhance functionality, the website features detailed service listings, an integrated 
-                        contact system, and client testimonials. Launched in 2023, the site is fully responsive, SEO optimised, 
-                        and uses an interactive map for locating services.`,
+        'services': 'Full Stack Web Design - Next.js, React, TypeScript',
+        'description': `CleanCo is a modern, fully custom-built website for a professional cleaning company established in
+                      1994, serving Paisley, Glasgow, and the Central Belt of Scotland. 
+                      
+                      Built from scratch using Next.js 16, React 19, and TypeScript with Tailwind CSS for styling, 
+                      the site features multiple service pages (window cleaning, carpet cleaning, power washing, office  cleaning, 
+                      construction cleaning, and commercial cleaning), each with detailed sub-service breakdowns, image galleries, 
+                      and unique feature lists.
+                      
+                      Key features include a dynamic portfolio section showcasing recent work with before/after comparisons, 
+                      client testimonials carousel using Embla, interactive service grids, a client ticker displaying major clients 
+                      (Avant Homes, Gama Aviation, Scottish Ambulance Service), and full mobile responsiveness. 
+                      
+                      The application uses Radix UI for accessible components, Framer Motion for smooth animations, 
+                      custom Google Fonts (Outfit, Hanken Grotesk, Instrument Serif), light/dark mode support via next-themes, 
+                      and Vercel Analytics for performance tracking. SEO optimized with location-specific keywords and 
+                      metadata.`,
         'link': 'https://www.cleanco-ltd.co.uk/'
+    },
+    {
+        'title': 'Drillface CRM',
+        'services': 'Full Stack Application - Web Design, Hosting, Devops',
+        'status': 'In production for Q3 2026',
+        'description': `Drillface is a comprehensive safety observation system designed for FIFO mining operations. 
+                      The platform enables field operators to capture and report safety signals, ground conditions, 
+                      and production pressure incidents through detailed forms with confidence-level reporting.
+                      
+                      Built with a modern tech stack featuring React 19, TypeScript, Express 5, and MySQL with Drizzle ORM and Shadcn.
+                      The system includes granular user management, production pressure tracking, rate-limited 
+                      authentication endpoints for security, and detailed logging of safety observations including 
+                      location data, signal categorization, and incident outcomes.`
     },
     {
         'title': 'Ecommerce Store',
