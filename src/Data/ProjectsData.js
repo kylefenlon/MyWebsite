@@ -23,6 +23,19 @@ export const projects = [
                     scheduling output.`
     },
     {
+        'title': 'Drillface CRM',
+        'services': 'Full Stack Application - Web Design, Hosting, Devops',
+        'status': 'In production for Q3 2026',
+        'description': `Drillface is a comprehensive safety observation system designed for FIFO mining operations. 
+                      The platform enables field operators to capture and report safety signals, ground conditions, 
+                      and production pressure incidents through detailed forms with confidence-level reporting.
+                      
+                      Built with a modern tech stack featuring React 19, TypeScript, Express 5, and MySQL with Drizzle ORM and Shadcn.
+                      The system includes granular user management, production pressure tracking, rate-limited 
+                      authentication endpoints for security, and detailed logging of safety observations including 
+                      location data, signal categorization, and incident outcomes.`
+    },
+    {
         'title': 'CleanCo Ltd CRM',
         'services': 'Full Stack Application - Web Design, Hosting, Devops',
         'status': 'Been in production since 2024, still actively being used to manage work for over 12 staff daily',
@@ -57,19 +70,6 @@ export const projects = [
                       and Vercel Analytics for performance tracking. SEO optimized with location-specific keywords and 
                       metadata.`,
         'link': 'https://www.cleanco-ltd.co.uk/'
-    },
-    {
-        'title': 'Drillface CRM',
-        'services': 'Full Stack Application - Web Design, Hosting, Devops',
-        'status': 'In production for Q3 2026',
-        'description': `Drillface is a comprehensive safety observation system designed for FIFO mining operations. 
-                      The platform enables field operators to capture and report safety signals, ground conditions, 
-                      and production pressure incidents through detailed forms with confidence-level reporting.
-                      
-                      Built with a modern tech stack featuring React 19, TypeScript, Express 5, and MySQL with Drizzle ORM and Shadcn.
-                      The system includes granular user management, production pressure tracking, rate-limited 
-                      authentication endpoints for security, and detailed logging of safety observations including 
-                      location data, signal categorization, and incident outcomes.`
     },
     {
         'title': 'Ecommerce Store',
